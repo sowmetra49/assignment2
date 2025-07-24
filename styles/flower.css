@@ -147,3 +147,112 @@ header {
 .btn-primary{
   color: #E95A08;
 }
+/* section3 css file  */
+ .flower-wrapper {
+      display: flex;
+      align-items: flex-start;
+      background-color: #ffffff;
+      padding: 20px;
+      
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+
+    .image-container {
+      position: relative;
+      width: 540px;
+      height: 597px;
+      flex-shrink: 0;
+    }
+
+    .main-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .badge {
+      position: absolute;
+      top: -50px; /* Adjust as needed */
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      z-index: 10;
+    }
+
+    .text-content {
+      margin-left: 20px;
+      flex: 1;
+    }
+
+    .text-content h1 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    .text-content ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    .text-content li {
+      font-size: 16px;
+      margin-bottom: 16px;
+      color: #555;
+    }
+
+    .deals {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .deal {
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      color: white;
+      text-align: center;
+      width: 250px;
+      height: 160px;
+    }
+
+    .deal img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .deal .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0,0,0,0.5);
+      padding: 10px 15px;
+      border-radius: 5px;
+    }
+
+    .deal .text h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .deal .text button {
+      margin-top: 5px;
+      padding: 5px 10px;
+      background: #ff8c00;
+      border: none;
+      border-radius: 3px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .deal.large {
+      width: 520px;
+      height: 160px;
+    }
