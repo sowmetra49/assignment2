@@ -12,13 +12,26 @@ body {
 }
 
 /* Header */
+body {
+  margin: 0;
+  background-color: #f4f7fc; /* Soft grayish-blue */
+  font-family: Arial, sans-serif;
+}
+
 header {
   width: 1140px;
   height: 71px;
   margin: 0 auto;
   display: flex;
-  align-items: center;
+  align-items: center;        /* center all items vertically */
   justify-content: space-between;
+  padding: 0 20px;
+  background-color: #f4f7fc;
+}
+
+.logo img {
+  height: 45px;               /* Fix: make logo smaller */
+  object-fit: contain;
 }
 
 .nav {
@@ -30,31 +43,33 @@ header {
 .nav a {
   text-decoration: none;
   font-size: 14px;
+  font-weight: 500;
+  color: #8987A1;
 }
 
 .nav .home {
-  color: #252432; /* Home button */
   font-weight: bold;
-}
-
-.nav .link {
-  color: #8987A1; /* Shop, About us */
-}
-
-.logo img {
-  height: 50px;
+  color: #252432;
 }
 
 .cart {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 8px;
+  font-size: 14px;
+  color: #252432;
 }
 
 .cart img {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
 }
+
+.headermargin{
+  margin-bottom: 126px;
+}
+
 
 /* First Section */
 .hero {
@@ -68,7 +83,9 @@ header {
 
 .hero-text {
   max-width: 500px;
+  margin-left: 120px;
 }
+
 
 .hero-text h1 {
   font-size: 40px;
@@ -116,6 +133,7 @@ header {
 
 .plant-card {
   text-align: center;
+  margin-bottom: 127px;
 }
 
 .plant-card img {
@@ -142,10 +160,15 @@ header {
   border: none;
   cursor: pointer;
 }
+.highlight{
+  font-family: Noto serif;
+}
 
 /* button class */
 .btn-primary{
   color: #E95A08;
+  width: 270px;
+  height:50px ;
 }
 /* section3 css file  */
  .flower-wrapper {
@@ -173,10 +196,11 @@ header {
     }
 
     .badge {
+     
       position: absolute;
-      top: -50px; /* Adjust as needed */
+      top: -50px; 
       left: 50%;
-      transform: translateX(-50%);
+      transform: translateX(160%);
       width: 120px;
       z-index: 10;
     }
@@ -204,71 +228,121 @@ header {
       color: #555;
     }
 
-    .deals {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+  
+    /* deals section */
+   
 
-    .deal {
-      position: relative;
-      border-radius: 10px;
-      overflow: hidden;
-      color: white;
-      text-align: center;
-      width: 250px;
-      height: 160px;
-    }
+.deals-section {
+  padding: 60px 20px;
+  text-align: center;
+}
 
-    .deal img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+.deals-section h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  text-align: center;
+}
 
-    .deal .text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: rgba(0,0,0,0.5);
-      padding: 10px 15px;
-      border-radius: 5px;
-    }
+.deals-section .highlight {
+  color: #E95A08;
+  font-weight: bold;
+}
 
-    .deal .text h3 {
-      margin: 0;
-      font-size: 18px;
-    }
+.deals-section p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+}
 
-    .deal .text button {
-      margin-top: 5px;
-      padding: 5px 10px;
-      background: #ff8c00;
-      border: none;
-      border-radius: 3px;
-      color: white;
-      cursor: pointer;
-    }
+.deals-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  font-family: Noto serif ;
+}
 
-    .deal.large {
-      width: 520px;
-      height: 160px;
-    }
+.left-deals {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+
+.deal-card {
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center; 
+  align-items: center;      
+  padding: 20px;
+  overflow: hidden;
+  text-align: center;      
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.deal-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 0;
+  border-radius: 15px;
+}
+
+.deal-text {
+  position: relative;
+  z-index: 1;
+}
+
+.deal-text h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.deal-text a {
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.deal-card.small {
+  width: 300px;
+  height: 170px;
+}
+
+.deal-card.large {
+  width: 600px;
+  height: 360px;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .deals-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .deal-card.large,
+  .deal-card.small {
+    width: 90%;
+  }
+}
+
     /* SUBSCRIBE SECTION */
   
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
 
-.subscribe-section {
-  position: relative;
-  width: 100%;
-  height: 533px; /* your image height */
-  overflow: hidden;
-}
+
+
 
 .background-image {
   width: 100%;
@@ -289,19 +363,28 @@ body {
   background: rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
+.subscribe-section {
+  margin-top: 120px;
+  position: relative;
+  width: 100%;
+  height: 533px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;      
+  justify-content: center;   
+  text-align: center;
+}
 
 .subscribe-content {
   position: relative;
   z-index: 2;
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 100px;
   color: white;
+  max-width: 700px;
+  width: 100%;
 }
 
 .subscribe-content h2 {
-  font-family: 'Noto Serif', serif; /* ✅ Apply font to heading */
+  font-family: 'Noto Serif', serif;
   font-size: 40px;
   margin-bottom: 30px;
 }
@@ -310,8 +393,14 @@ body {
   display: flex;
   max-width: 600px;
   margin: 0 auto;
-  font-family: 'Noto Serif', serif; /* optional: apply to form too */
+  font-family: 'Noto Serif', serif;
 }
+
+
+
+
+
+
 
 .subscribe-form input[type="email"] {
   flex: 1;
@@ -406,7 +495,7 @@ body {
 .footer-links a {
   text-decoration: none;
   color: #000000;
-  font-size: 15px;
+  font-size:100;
 }
 
 .footer-links a:hover {

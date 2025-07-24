@@ -8,35 +8,40 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="logo">
-      <img src="./faugei-logo.png" alt="Faugei Logo">
-    </div>
-    <nav class="nav">
-      <a class="home" href="#">Home</a>
-      <a class="link" href="#">Shop</a>
-      <a class="link" href="#">About us</a>
-    </nav>
-    <div class="cart">
-      <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="Cart Icon">
-      <span>Cart (USD)</span>
-    </div>
-  </header>
+  
+  
+<header>
+  <div class="logo">
+    <img src="your-logo-path.png" alt="Faugei Logo">
+  </div>
 
-  <!-- First Section -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1><strong>ALWAYS <span class="highlight">FRESH</span></strong> <br><span class="highlight">FLOWERS</span></h1>
-      <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.</p>
-    </div>
-    <img src="assets/hero-flower.png" alt="Flower Image">
-  </section>
+  <nav class="nav">
+    <a class="home" href="#">Home</a>
+    <a class="link" href="#">Shop</a>
+    <a class="link" href="#">About us</a>
+ 
+
+  <div class="cart">
+    <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="Cart Icon">
+    <span>Cart (USD)</span>
+  </div>
+   </nav>
+</header>
+<!-- First Section -->
+<section class="hero">
+  <div class="hero-text">
+    <h1><strong>ALWAYS <span class="highlight">FRESH</span></strong><br><span class="highlight">FLOWERS</span></h1>
+    <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From <span> classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion</span>.</p>
+  </div>
+  <img src="assets/hero-flower.png" alt="Flower Image">
+</section>
+
+ 
 
   <!-- Second Section -->
   <section class="plants-section">
     <h2><span class="highlight">Our</span> Plants</h2>
-    <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+    <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From  classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.</p>
     <div class="grid">
       
       
@@ -95,7 +100,7 @@
     
  <div class="flower-wrapper">
     <div class="image-container">
-      <!-- ✅ Badge inside container, positioned absolutely -->
+      
       <img src="assets/trusted-badge.png" alt="Trusted Seller Badge" class="badge">
       <img src="assets/flower-store.png" alt="Flower Table" class="main-image">
     </div>
@@ -114,39 +119,41 @@
 
 
   <!-- Deals Section -->
-  <div class="section-title">
-    <span>Latest</span>
-    <h2>Deals</h2>
-  </div>
-  <p class="section-subtitle">
-    Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.
-  </p>
+  
+  <!-- latest deals -->
+   <section class="deals-section">
+    <h2><span class="highlight">Latest</span> Deals</h2>
+    <p>
+      Indulge your senses with the beauty and fragrance of our fresh flower shop. 
+      From classic roses to exotic blooms, we offer a wide variety of fresh.
+    </p>
 
-  <div class="deals">
-    <div class="deal">
-      <img src="assets/deal-bloom.png" alt="Bloom Plant" />
-      <div class="text">
-        <h3>60% Off | Bloom Plant</h3>
-        <button>Shop Now</button>
+    <div class="deals-container">
+      <div class="left-deals">
+        <div class="deal-card small" style="background-image: url(assets/deal-bloom.png);">
+          <div class="deal-text">
+            <h3>60% Off | Bloom Plant</h3>
+            <a href="#">Shop Now</a>
+          </div>
+        </div>
+
+        <div class="deal-card small" style="background-image: url('assets/deal-ana.png');">
+          <div class="deal-text">
+            <h3>30% Off | Ana Plant</h3>
+            <a href="#">Shop Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-card large" style="background-image: url('assets/deal-zabo.png');">
+        <div class="deal-text">
+          <h3>25% Off | Zabo Plant</h3>
+          <a href="#">Shop Now</a>
+        </div>
       </div>
     </div>
+  </section>
 
-    <div class="deal">
-      <img src="assets/deal-ana.png" alt="Ana Plant" />
-      <div class="text">
-        <h3>30% Off | Ana Plant</h3>
-        <button>Shop Now</button>
-      </div>
-    </div>
-
-    <div class="deal large">
-      <img src="assets/deal-zabo.png" alt="Zabo Plant" />
-      <div class="text">
-        <h3>25% Off | Zabo Plant</h3>
-        <button>Shop Now</button>
-      </div>
-    </div>
-  </div>
   <!-- SUBSCRIBE BUTTON -->
    <section class="subscribe-section">
     <img src="assets/news-letter-bg.png" alt="Background Flowers" class="background-image">
@@ -159,13 +166,13 @@
       </form>
     </div>
   </section>
-<!-- Footer SECTIOJN -->
+<!-- Footer SECTION -->
  <footer class="footer">
   <div class="footer-container">
     
-    <!-- Left: Logo and Tagline -->
+   
     <div class="footer-left">
-      <img src="logo.png" alt="Fauget Flower Shop" class="footer-logo">
+      <img src="assets/logo.png" alt="Fauget Flower Shop" class="footer-logo">
       <p>Indulge your senses with the beauty and fragrance of our fresh flower shop.</p>
     </div>
 
