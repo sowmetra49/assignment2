@@ -1,0 +1,149 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #ffffff; /* white background */
+  color: #000000; /* black text */
+}
+
+/* Header */
+header {
+  width: 1140px;
+  height: 71px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav .home {
+  color: #252432; /* Home button */
+  font-weight: bold;
+}
+
+.nav .link {
+  color: #8987A1; /* Shop, About us */
+}
+
+.logo img {
+  height: 50px;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cart img {
+  width: 16px;
+  height: 16px;
+}
+
+/* First Section */
+.hero {
+  width: 1140px;
+  height: 461px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+}
+
+.hero-text .highlight {
+  color: #E95A08;
+}
+
+.hero-text p {
+  margin-top: 15px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.hero img {
+  height: 300px;
+}
+
+/* Second Section */
+.plants-section {
+  width: 1140px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.plants-section h2 {
+  font-size: 28px;
+}
+
+.plants-section h2 .highlight {
+  color: #E95A08;
+}
+
+.plants-section p {
+  margin: 10px 0 20px 0;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.plant-card {
+  text-align: center;
+}
+
+.plant-card img {
+  width: 100%;
+  max-width: 270px;
+  height: auto;
+}
+
+.plant-card h4 {
+  margin: 10px 0 5px 0;
+  font-size: 14px;
+}
+
+.plant-card p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.plant-card button {
+  width: 270px;
+  height: 50px;
+  background-color: #E95A08;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* button class */
+.btn-primary{
+  color: #E95A08;
+}
